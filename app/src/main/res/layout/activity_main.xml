@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/txtKTP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="KARTU TANDA PENDUDUK"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/provinsi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PROVINSI JAWA TIMUR"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtNIK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIK :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <EditText
+            android:id="@+id/NIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIK Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <EditText
+            android:id="@+id/Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTanggalLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempat / Tanggal Lahir :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <EditText
+            android:id="@+id/edtTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempat/Tanggal Lahir Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtJenisKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"/>
+        <RadioGroup
+            android:id="@+id/jkel"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/laki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"
+                android:textSize="12dp"/>
+            <RadioButton
+                android:id="@+id/perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textSize="12dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtGolDar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gol Darah :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/edtGolDar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Golongan Darah Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/edtAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtRTRW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RT / RW :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/edtRTRW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RT / RW Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtDesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kel / Desa :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/edtDesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kel / Desa Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtKecamatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kecamatan :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/edtKecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kecamatan Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtAgama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agama :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/edtAgama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agama Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtKawin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Perkawinan :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/edtKawin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Status Perkawinan Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtPekerjaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pekerjaan :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/edtPekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pekerjaan Anda"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:id="@+id/txtKewarganegaraan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kewarganegaraan :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/edtKewarganegaraan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WNI"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtMasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berlaku Hingga :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/masa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEUMUR HIDUP"
+            android:textSize="12dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
